@@ -11,5 +11,5 @@
 
 
 ## Objetivos del trabajo
-
+laberinto
 [Lista de los objetivos que se persiguen con el trabajo propuesto.]
