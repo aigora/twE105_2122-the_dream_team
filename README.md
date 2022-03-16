@@ -4,7 +4,11 @@
 
 ## Integrantes del equipo
 
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
+- Ana Centeno (ana4centeno)
+- Diego Ronda (dRonda)
+- Deniz Alcobendas (DenizAlcobendas)
+- Sergio Arias (sergioariasblanco)
+
 
 ## Objetivos del trabajo
 
