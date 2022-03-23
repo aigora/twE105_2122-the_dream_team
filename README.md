@@ -1,6 +1,6 @@
-Scape Room
-
-[Descripción breve del proyecto a realizar (2-3 frases).]
+ ##  Hotel encantado
+Se trata de un juego planteado en un hotel encantado el que el jugador debe de ir resolviendo los retos planteados para escapar de él.
+También enfrentandose a los personajes que aparecen en el juego.
 
 ## Integrantes del equipo
 
