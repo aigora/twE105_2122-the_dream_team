@@ -11,5 +11,6 @@ También enfrentandose a los personajes que aparecen en el juego.
 
 
 ## Objetivos del trabajo
-laberinto
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+Es un juego de un jugador que consiste en una sucesión de toma de decisiones.
+En función de la decisión que vaya escogiendo el jugador, la historia cambiara hacia un final determinado.
+Se dispondra de distintos finales.
