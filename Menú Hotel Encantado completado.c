@@ -27,19 +27,20 @@ int main ()
                 break;
             case 4:
                 printf("Ha elegido salir.\n¡Vuelva pronto!\n\n");
-                return main();
+                return main();//esta acción realiza unna vuelta al menú inicial
                 break;
             }
         break;
 
  	case 2:
-	    printf("Estas son las intrucciones:");
+	    printf("Estas son las intrucciones:\n\n");
 	    //Aqui se adjuntaran las instrucciones
+	    return main();
 	    break;
 	case 3:
 	    printf("Vuelva pronto \n");
-	    exit(0);
-		break;
+        return (0);
+        break;
  }
     return 0;
 }
