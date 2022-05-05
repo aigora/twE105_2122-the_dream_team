@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+
+int main()
+{
+int vidas;
+char resultado;
+vidas=3;
+
+scanf("%c", &resultado);
+//x(pierdes), y(aciertas)
+switch(resultado)
+{
+    case 'x':
+        if (vidas=1)
+       printf("final del juego\n");
+        else
+
+          vidas-=1;
+
+            printf("le quedan %i vidas\n", vidas);
+    break;
+    case 'y':
+        printf("le quedan %i vidas\n", vidas);
+    break;
+    default:
+        printf("error\n");
+    break;
+}
+return 0;
+}
