@@ -12,7 +12,7 @@ scanf("%c", &resultado);
 switch(resultado)
 {
     case 'x':
-        if (vidas=1)
+        if (vidas<=1)
        printf("final del juego\n");
         else
 
