@@ -27,7 +27,7 @@ int main ()
     switch (menu)
  {
  	case 1:
- 	    printf("1)Iniciar sesión\n2)Crear sesión\n3)Atrás\n");
+ 	    printf("1)Iniciar sesion\n2)Crear sesion\n3)Atras\n");
  	    scanf("%d", &sesion);
  	    if(sesion==1){
                 FicheroUsuarios(info, &numeroUsuarios);
@@ -108,7 +108,7 @@ void IniciarSesion(int *nUsuarios,struct usuario info[]){
 		printf("Introduzca  nombre de usuario:\n");
 		fflush(stdin);
 		scanf("%s", Usuario1);
-		printf("Introduzca contraseña:\n");
+		printf("Introduzca clave:\n");
 		fflush(stdin);
 		scanf("%s",Contrasena1);
 
@@ -120,7 +120,7 @@ void IniciarSesion(int *nUsuarios,struct usuario info[]){
 		}
 
 		if(coincide==0){
-			printf("Usuario o contraseña incorrectos.\n");
+			printf("Usuario o clave incorrectos.\n");
 		}else{
 			printf("Usuario valido\n");
 		}
@@ -160,7 +160,7 @@ void CrearUsuarios(int *nUsuarios,struct usuario info[]){
 
 	}while(coincide==1);
 
-	printf("Introduzca contraseña:\n",164);
+	printf("Introduzca clave:\n",164);
 	fflush(stdin);
 	scanf("%s",info[i].contrasena);
 
@@ -185,11 +185,12 @@ do{
     else{
         printf("Error\n");
         contador++;
-      if (contador==3){
-        printf("Has superado el limite de intentos\n");}
-
+      if (contador==2){
+        printf("Has superado el limite de intentos\n");
+        printf("Demasidos errores no has logrado escapar de hotel...\n");}
+        printf("Recuerde su clave y usuario para volver a intentarlo de nuevo\n");
 }
-    }while(contador<3&&tecla!=solucion);
+    }while(contador<2&&tecla!=solucion);
 
 
          printf("Intentos  %i\n",contador);}
@@ -205,7 +206,9 @@ do{
 
     else{
         printf("Error,intentalo de nuevo\n");
-
+        printf("fin del juego");
+        printf("Demasidos errores no has logrado escapar de hotel...\n");
+        printf("Recuerde su clave y usuario para volver a intentarlo de nuevo\n");
 }contador++;
     }while(contador<3);
 
