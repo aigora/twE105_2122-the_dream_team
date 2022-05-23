@@ -8,8 +8,8 @@ struct usuario{
 int FicheroUsuarios(struct usuario info[], int *nUsuarios);
 void IniciarSesion(int *nUsuarios,struct usuario info[]);
 void CrearUsuarios(int *nUsuarios,struct usuario info[]);
-void preguntatest(char solucion);
-void preguntamatematicas(float solucion);
+int preguntatest(char solucion);
+int preguntamatematicas(float solucion);
 
 int main ()
 {
@@ -172,7 +172,7 @@ void CrearUsuarios(int *nUsuarios,struct usuario info[]){
 	fclose(fichUsuarios);
 	system("PAUSE");
 }
-void preguntatest(char solucion){
+int preguntatest(char solucion){
     int contador;
 char tecla;
 do{
@@ -185,16 +185,11 @@ do{
     else{
         printf("Error\n");
         contador++;
-      if (contador==2){
-        printf("Has superado el limite de intentos\n");
-        printf("Demasidos errores no has logrado escapar de hotel...\n");}
-        printf("Recuerde su clave y usuario para volver a intentarlo de nuevo\n");
 }
     }while(contador<2&&tecla!=solucion);
-
-
-         printf("Intentos  %i\n",contador);}
-void preguntamatematicas(float solucion){
+         printf("Intentos  %i\n",contador);
+         return contador;}
+int preguntamatematicas(float solucion){
     int contador;
     float correcta;
 do{
@@ -202,16 +197,16 @@ do{
 
     if (correcta==solucion){
         printf("¡Brillante,solucion correcta!\n");
+
  }
 
     else{
         printf("Error,intentalo de nuevo\n");
-        printf("fin del juego");
-        printf("Demasidos errores no has logrado escapar de hotel...\n");
-        printf("Recuerde su clave y usuario para volver a intentarlo de nuevo\n");
-}contador++;
-    }while(contador<3);
+         contador++;
 
-    printf("Has superado el limite de intentos\n");
-    printf("Intentos  %i\n",contador);}
+}
+    }while(contador<3&&correcta!=solucion);
+
+    printf("Fallos %i\n",contador);
+    return contador;}
 

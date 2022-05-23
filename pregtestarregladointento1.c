@@ -1,6 +1,7 @@
 #include <stdio.h>// sistemas de respuestas tipo test para cada pregunta asignamos la solucion antes para poder variar la respuesta en cada pregunta solo hay que
 //modificar la solucion
 int preguntatest(char solucion);
+void contador (int vidas);
 int main(){
     char solucion1;
     solucion1='a';
@@ -30,3 +31,4 @@ do{
 
          printf("Intentos  %i\n",contador);
          return contador;}
+
