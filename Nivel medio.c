@@ -7,14 +7,12 @@ int preguntamatematicas(float solucion);
 
 
 int main(){
-    char respuestaC1; //respuesta de tipo caracter
-    char respuestaC2;
+    char respuestaC1, respuestaC2; //respuesta de tipo caracter
     float respuestaN; //respuesta de tipo numerica
     char solucionA = 'A';
     char solucionB = 'B';
     char solucionC = 'C';
-    int intentos;
-
+    int intentos, i=0;
 
     printf("Bienvenido aventurero!\n");
     printf("Llevas 2 semanas de viaje, tu d%ca ha sido duro, pero por fin has llegado al hotel y puedes descansar\n", 161);
@@ -42,40 +40,54 @@ int main(){
 				}
     }while(respuestaC1!='A' && respuestaC1!='B');
     }while(respuestaC1!='A');
+
     printf("Sales al pasillo y ves una figura que sale corriendo y se mete en la %cltima habitaci%cn del pasillo\n", 163, 162);
     printf("Le sigues y entras en la habitaci%cn, la puerta se cierra de golpe y no hay nadie en la habitaci%cn\n", 162, 162);
     printf("En la habitaci%cn solo hay una hoja y tres llaves, lees la hoja\n", 162);
     printf("'Estas en un hotel encantado, para poder salir deberas acertar todos los acertijos, sino te quedaras aqu%c para siempre'\n", 161);
     printf("Para salir de esta habitaci%cn debes coger una de las tres llaves que hay delante tuyo, la A, la B o la C, en funci%cn de tu decisi%cn podras salir o no\n\n", 162, 162, 162);
     printf("Acertijo:\nHay 10 velas encendidas, el viento apaga 2, y luego apaga otra m%cs ¿cu%cntas velas quedar%cn al final?\n", 160, 160, 160);
-    printf("A) 8 velas\nB) 7 velas\nC) 3 velas\n");
+    printf("A) 8 velas\nB) 7 velas\nC) 3 velas\nD) 5 velas\n");
+    intentos = preguntamatematicas(3);
 
-    intentos = preguntatest(solucionC);
-    fflush(stdin);
-    getchar();
     printf("Las 7 velas que no apag%c el viento acabar%cn consumi%cndose por completo, por lo que s%clo quedar%cn las 3 que apag%c el viento y por tanto no se consumieron\n\n", 162, 162, 130, 162, 160, 162);
-    if (intentos == 2){
-        printf("\nGAME OVER\n");
-        exit(1);
+    if (intentos == 3){
+        ++i;
+        printf("\nHAS PERDIDO UNA VIDA\nTE QUEDAN %d\n\n", 4-i);
+        if(4-i == 0){
+            printf("GAME OVER");
+            exit(1);
+        }
     }
+
+    fflush(stdin); //PAUSA
+    getchar();
+
     printf("Sales de la habitaci%cn, buscas tu maleta para salir corriendo\n", 162);
     printf("En tu habitaci%cn hay una bruja, la cu%cl te plantea otro acertijo para recuperar tu maleta o quedarsela\n", 162, 160);
     printf("Acertijo:\nUn virus llena un tarro en una hora, dividi%cndose en dos una vez al minuto ¿Cu%cntos minutos tardar%c el tarro en llenarse si empezaras con dos virus?\n", 130, 160, 160);
     printf("A) 1 hora\nB) 30 min\nC) 59 min\n");
-
     intentos = preguntatest(solucionC);
-    fflush(stdin);
-    getchar();
+
     if (intentos == 2){
-        printf("\nGAME OVER\n");
-        exit(1);
+        ++i;
+        printf("\nHAS PERDIDO UNA VIDA\nTE QUEDAN %d\n\n", 4-i);
+        if(4-i == 0){
+            printf("GAME OVER");
+            exit(1);
+        }
     }
+
+    fflush(stdin); //PAUSA
+    getchar();
+
     printf("Un virus necesita un minuto para duplicarse. Por tanto, si empiezas con dos virus en lugar de con uno, s%clo ganas un minuto\nPor tanto la soluci%cn es la C", 162, 162);
     printf("Bien hecho! Ya tienes tu maleta, ahora hay que intentar salir del hotel\n");
     printf("Por donde prefieres intentar huir:\nA) Escaleras\nB) Ascensor\n");
     do{
         fflush(stdin);  //para borrar el valor de resultadoC1 y que funcione el bucle
         scanf("%c", &respuestaC1);
+        printf("\n\n");
         if(respuestaC1=='A'){
 					printf("Huyes en escaleras\n");
 				}
@@ -86,33 +98,68 @@ int main(){
 					printf("'Si tienes un gran cubo pintado de rojo y lo divides en 27 cubitos iguales ¿cu%cntos de ellos tendr%cn solo una de sus seis caras pintadas de rojo?'\n", 160, 160);
 					printf("Marca el resultado con los botones del ascensor para poder bajar al segundo piso\n");
 					printf("Opciones:\nA) 19\nB) 6\nC) 0\nD) 13.5\n E) 27\n");
-					intentos = preguntamatematicas(6.);
-					if (intentos == 2){
-                        printf("\nGAME OVER\n");
-                        exit(1);
+					intentos = preguntamatematicas(6);
+					if (intentos == 3){
+                        ++i;
+                        printf("\nHAS PERDIDO UNA VIDA\nTE QUEDAN %d\n\n", 4-i);
+                        if(4-i == 0){
+                            printf("GAME OVER");
+                            exit(1);
+                        }
 					}
-					printf("Llegas al segundo piso y vas corriendo a las escaleras antes de que el ascensor deje de funcionar completamente");
+
+					printf("Vas corriendo a las escaleras antes de que el ascensor deje de funcionar completamente");
 				}
         else{
                 printf("Has introducido mal la opci%cn. Solo vale a o b\n", 162);
 				}
     }while(respuestaC1!='A' && respuestaC1!='B');
-    fflush(stdin);
+
+    fflush(stdin); //PAUSA
     getchar();
+
     printf("LLegas al segundo piso y te encuentras a un viejo loco que tiene atado a Frankestein\n");
     printf("Te dice que si no le ayudas le soltara\n");
     printf("El viejo te dice: 'Tengo que darle 10 pastillas a Frankestein, una diaria a partir de hoy, y en un orden espec%cfico ¿A cu%cntas debe poner n%cmero para no equivocarme?'\n", 161, 160, 163);
     printf("A) A 8\nB) A las 10\nC) A 9\n");
 
     intentos = preguntatest(solucionA);
-    fflush(stdin);
-    getchar();
+
     printf("Debe darle la pastilla de hoy, y luego numerar las que le toque darle desde el d%ca 2 al 9. La del d%ca 10 no necesita numerarla porque ser%c la %cnica que no estar%c numerada, as%c que no puede confundirse con otra\n", 161, 161, 160, 163, 160, 161);
     if (intentos == 2){
-        printf("\nGAME OVER\n");
-        exit(1);
+        ++i;
+        printf("\nHAS PERDIDO UNA VIDA\nTE QUEDAN %d\n", 4-i);
+        if(4-i == 0){
+            printf("GAME OVER");
+            exit(1);
+        }
     }
 
+    fflush(stdin); //PAUSA
+    getchar();
+
+    printf("Consigues escapar y te diriges a recepci%cn cuando...\n", 162);
+    printf("Te encuentras de frente a dos gemelos totalmente parados y con un aspeecto muy t%ctrico\n", 130);
+    printf("Un hermano habla y te dice: 'Si quieres pasar tienes que averiguar nuestras edad'\n");
+    printf("El otro hermano comenta: 'Si me quito 2 años y se los doy a mi hermano, %cl tendr%ca dos veces mi edad. Y si le diera un a%co m%cs, tendr%ca el triple'\n ¿Cu%cntos a%cos tienen ambos hermanos?\n", 130, 161, 164, 160, 161, 160, 164);
+    printf("A) 9\nB) 6\nC) 3\n D)14\nE)5\n");
+    preguntamatematicas(6);
+
+    printf("La respuesta correcta es 6 años cada uno\n");
+
+    if (intentos == 3){
+        ++i;
+        printf("\nHAS PERDIDO UNA VIDA\nTE QUEDAN %d\n\n", 4-i);
+        if(4-i == 0){
+           printf("GAME OVER");
+           exit(1);
+            }
+        }
+
+    fflush(stdin); //PAUSA
+    getchar();
+
+    printf("Los hermanos te dejan pasar y llegas a la recepci%cn del hotel, justo en la salida\n", 162);
 
 
 
