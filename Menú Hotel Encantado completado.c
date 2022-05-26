@@ -477,7 +477,7 @@ int main ()
                 printf("Ha elegido la dificultad dificil\n");
                     char y;
 
-                    float solucion1=1000,solucion2=17,solucion3=3748,solucion4=20 ,solucion5='d' ,solucion6='d' ,solucion7=0154 ;
+                    float solucion1=1000,solucion2=17,solucion3=3748,solucion4=20 ,solucion5=8 ,solucion6='d' ,solucion7=50;
                     int cont=0;
                         printf("Estas en el momento mas complicado de esta historia,espero que estes preparado...\n");
                         scanf("%c",&y);
@@ -552,50 +552,50 @@ int main ()
                                                             printf("La luz no se enciende, por lo que decides abrir la caja para saber qué está ocurriendo\n");
                                                             printf("Lo abres y ves que hay unos cables enrrollados y junto a ellos, ves una nota...\n");
                                                             printf("si la luz deseas encender, el acertijo deberas resolver.\n");
-                                                            printf("Has colocado las 52 cartas de una baraja mas un comodin boca abajo en una mesa. Luego empiezas a darles la vuelta una a una. Si no puedes dar la vuelta a la misma carta dos veces ¿Que probabilidades tienes de dar la vuelta a los cuatro ases antes de encontrar el comodin? (introduce la solucion en porcentaje)");
+                                                            printf("Has colocado las 52 cartas de una baraja mas un comodin boca abajo en una mesa. Luego empiezas a darles la vuelta una a una. Si no puedes dar la vuelta a la misma carta dos veces ¿Que probabilidades tienes de dar la vuelta a los cuatro ases antes de encontrar el comodin? (introduce la solucion en porcentaje)\n");
 
                                                             cont=preguntamatematicas(solucion4);
                                                             printf("Vidas perdidas %i\n",cont);
 
                                                                 if(cont==3)
                                                                 {
-                                                                    printf("No has conseguido encender la luz, por lo que los fantasmas del hotel no se han sentido amenazados y te han atacado");
-                                                                    printf("FIN DEL JUEGO");
+                                                                    printf("No has conseguido encender la luz, por lo que los fantasmas del hotel no se han sentido amenazados y te han atacado.\n");
+                                                                    printf("Expliacion: Tienes cinco cartas (los ases y el comodín) a las que dar la vuelta y una de ellas tiene que ser la última. Así que la solución es una entre cinco, o lo que es lo mismo: el 20 por ciento.\n");
+                                                                    printf("FIN DEL JUEGO\n");
                                                                     return 0;
                                                                 }
                                                                     else
                                                                     {
-                                                                        printf("Por fin se hace la luz y consigues ver claramente la habitación.\n");
+                                                                        printf("CORRECTO! MUY BIEN AVENTURERO!\n");
+                                                                        printf("Por fin se hace la luz y consigues ver claramente la habitación.");
                                                                         scanf("%c",&y);
                                                                     }
-                                                                        printf("Te fijas con lo que tropezaste antes, ves que son unas cajas cuadradas con dibujos en todas sus caras");
-                                                                        printf("Te empiezas a acercar para observarlas mejor, pero empieza a sonar una cinta y te asustas.\n");
-                                                                        printf("(Si quieres salir de la habitacion, tienes que buscar la llave en una de las cajas, pero cuidado, tres de ellas estan llenas de avispas y solo una, con distinto diseño, tiene la llave)\n");
-                                                                        printf("Entras en panico, eres alergico a las avispas y no tienes tus medicamentos contigo, por lo que no te puedes permitir fallar.\n");
-                                                                        //115
+                                                                        printf("Te fijas con lo que tropezaste antes, ves que es una caja de la que empieza a salir un fantasma.\n");
+                                                                        printf("Empieza a hablarte, comentandote que el medico le ha preescrito unas medicinas, pero no sabe en que orden poner las pastillas y cuantas debe enumerar para no equivocarse.\n");
+                                                                        printf("Muy agobiado te pide ayuda y te dice que si le consigues ayudar, una llave te dara para poder salir del cuarto.\n");
+                                                                        printf("Acertijo: El medico le ha prescrito 10 pastillas a un fantasma, el cual debe tomarse una al dia a partir de hoy, y en un orden especifico ¿A cuantas debe poner numero para no equivocarse?\n");
 
                                                                         cont=preguntamatematicas(solucion5);
                                                                         printf("Vidas perdidas %i\n",cont);
 
                                                                             if(cont==3)
                                                                             {
-                                                                                printf("Te has equivocado de caja, las avispas te estan siguiendo para atacarte y no puedes acer nada para protegerte");
+                                                                                printf("Te has equivocado!! El fantasma se ha enfadado y te ha encerrado en la caja.\n");
+                                                                                printf("Explicacion: Debe tomar la pastilla de hoy, y luego numerar las que le toque tomar desde el dia 2 al 9. La del dia 10 no necesita numerarla porque sera la unica que no estara numerada, asi que no puede confundirse con otra.\n");
                                                                                 printf("FIN DEL JUEGO");
                                                                                 return 0;
                                                                             }
                                                                                 else
                                                                                 {
-                                                                                    printf("Consigues acertar la caja distinta y obtener la llave con la que abres la puerta.\n");
+                                                                                    printf("Consigues acertar obtener la llave con la que abres la puerta.\n");
                                                                                     scanf("%c",&y);
                                                                                 }
                                                                                     printf("Pasas la puerta y ves unas escaleras con la señal EXIT, no te lo puedes creer, has encontrado la salida.\n");
-                                                                                    scanf("%c",&y);
-                                                                                    printf("Bajas las escaleras lo mas rapido que puedes para que, por fin puedas dejar atras toda la locura...\n");
+                                                                                    printf("Bajas las escaleras lo mas rapido que puedes para que, por fin puedas dejar atras toda la locura.\n");
                                                                                     printf("Pero... esto no se ha acabado\n");
-                                                                                    scanf("%c",&y);
                                                                                     printf("Al llegar a la planta baja, te fijas que hay un grupo de zombies discutiendo sobre un tema de dinero.\n ");
                                                                                     printf("se te acercan y te dicen que si les ayudas a resolver el problema, te dejarán salir del hotel\n");
-                                                                                    //066
+                                                                                    printf("Acertijo: Cada una de estas personas ha pedido dinero prestado a una de las otras cinco, y a su vez ha prestado dinero a otra persona. Si B pidio dinero a A, E no presto a A, y C presto a D ¿Quien fue el que le presto dinero a A?\n");
 
                                                                                     cont=preguntamatematicas(solucion6);
                                                                                     printf("Vidas perdidas %i\n",cont);
@@ -611,16 +611,18 @@ int main ()
                                                                                                 printf("Has conseguido ayudarles, estan tan contentos que te ayudan a llegar al coche aparcado en el jardin para que puedas escapar de tal lugar funebre.\n");
                                                                                                 scanf("%c",&y);
                                                                                             }
-                                                                                                printf("Llegas al coche cansado, con ganas de volver a casa y saludar a tu familia tras tanto tiempo encerrado y asustado, pero te encuentras con el ultimo inconveniente...");
-                                                                                                printf("No te lo puedes creer, hay un codigo en la puerta del coche que tienes que descifrar para poder abrir la puerta y encender el motor.\n");
-                                                                                                //81 caja pandora
+                                                                                                printf("Llegas al jardin de enfrente cansado, con ganas de volver a casa y saludar a tu familia tras tanto tiempo encerrado y asustado, pero te encuentras con el ultimo inconveniente...");
+                                                                                                printf("No te lo puedes creer, tu coche ya no esta, ya no tienes fuerzas de nada y del disgusto, te pones a llorar.\n");
+                                                                                                printf("Unos granjeros se te acercan y empiezan a habalar contigo, les comentas tu situacion y se ofreces a llevarte a casa si les ayudas a resolver un problema.\n");
+                                                                                                printf("Acertijo: Alfred y Roland deben arar un terreno de 4 hectareas por el que se pagan 100€. Teniendo en cuenta que dividen el terreno por la mitad para trabajar cada uno en un lado, que Alfred trabaja a un ritmo de 20 minutos por hectarea, y que Roland tarda 40 minutos, pero lo hace tres veces mas rapido que Alfred. ¿Cuánto dinero ganara Roland?\n");
 
                                                                                                 cont=preguntamatematicas(solucion7);
                                                                                                 printf("Vidas perdidas %i\n",cont);
 
                                                                                                     if(cont==3)
                                                                                                     {
-                                                                                                        printf("Pese a tus intentos, has fallado el codigo, y por triste que parezca, tendras que quedarte en este hotel hasta el fin de tus tiempos.\n");
+                                                                                                        printf("Pese a tus intentos, has fallado y los granjeros se han enfadado y te han dejado tirado, por lo que tinenes que volver al hotel a refugiarte.\n");
+                                                                                                        printf("Explicacion: Al dividir el terreno por la mitad y ocuparse cada uno de una parte, ambos cobraran la mitad de los 100€ que cuesta hacer el trabajo, independientemente de lo que tarden en hacer su parte.\n");
                                                                                                         printf("FIN DEL JUEGO");
                                                                                                         return 0;
                                                                                                     }
