@@ -290,9 +290,7 @@ int main ()
                 printf("Ha elegido la dificultad dificil\n");
                     char y;
 
-                printf("Ha elegido la dificultad dificil");
-
-                    float solucion1=1000,solucion2=17,solucion3=3748,solucion4='c' ,solucion5='d' ,solucion6='d' ,solucion7=0154 ;
+                    float solucion1=1000,solucion2=17,solucion3=3748,solucion4=20 ,solucion5='d' ,solucion6='d' ,solucion7=0154 ;
                     int cont=0;
                         printf("Estas en el momento mas complicado de esta historia,espero que estes preparado...\n");
                         scanf("%c",&y);
@@ -310,6 +308,7 @@ int main ()
                             {
                                 printf("Lamento decirte que no has logrado superar ni si quiera esta sencilla prueba,por lo que a continuacion seras arrojado al vacio junto con los demas jugadores que lo han intentado");
                                 printf("FIN DEL JUEGO");
+                                return 0;
                             }
 
                                 else
@@ -331,6 +330,7 @@ int main ()
                                         {
                                             printf("Lamento decirte que no has logrado superar la prueba del chico,por lo que este decide devorarte");
                                             printf("FIN DEL JUEGO");
+                                            return 0;
                                         }
                                             else
                                             {
@@ -349,6 +349,7 @@ int main ()
                                                     {
                                                         printf("Lamento decirte que no has logrado abrir esta puerta,por lo que seras arrojado al vacio junto con los demas jugadores que lo han intentado ");
                                                         printf("FIN DEL JUEGO");
+                                                        return 0;
                                                     }
                                                         else
                                                         {
@@ -363,8 +364,8 @@ int main ()
                                                             printf("Tras unos pocos instantes, te das cuenta que has conseguido encontrar el interruptor que necesitabas para encender la luz, pero... hay un problema\n ");
                                                             printf("La luz no se enciende, por lo que decides abrir la caja para saber qué está ocurriendo\n");
                                                             printf("Lo abres y ves que hay unos cables enrrollados y junto a ellos, ves una nota...\n");
-                                                            printf("si la luz deseas encender, el cable que estirado tenga un nudo deberás reconocer.\n");
-                                                            //108
+                                                            printf("si la luz deseas encender, el acertijo deberas resolver.\n");
+                                                            printf("Has colocado las 52 cartas de una baraja mas un comodin boca abajo en una mesa. Luego empiezas a darles la vuelta una a una. Si no puedes dar la vuelta a la misma carta dos veces ¿Que probabilidades tienes de dar la vuelta a los cuatro ases antes de encontrar el comodin? (introduce la solucion en porcentaje)");
 
                                                             cont=preguntamatematicas(solucion4);
                                                             printf("Vidas perdidas %i\n",cont);
@@ -373,6 +374,7 @@ int main ()
                                                                 {
                                                                     printf("No has conseguido encender la luz, por lo que los fantasmas del hotel no se han sentido amenazados y te han atacado");
                                                                     printf("FIN DEL JUEGO");
+                                                                    return 0;
                                                                 }
                                                                     else
                                                                     {
@@ -392,6 +394,7 @@ int main ()
                                                                             {
                                                                                 printf("Te has equivocado de caja, las avispas te estan siguiendo para atacarte y no puedes acer nada para protegerte");
                                                                                 printf("FIN DEL JUEGO");
+                                                                                return 0;
                                                                             }
                                                                                 else
                                                                                 {
@@ -414,6 +417,7 @@ int main ()
                                                                                         {
                                                                                             printf("No consigues resolver el acertijo y ayudarles, por lo que se enfadan contigo y se comen tu cerebro.\n");
                                                                                             printf("FIN DEL JUEGO");
+                                                                                            return 0;
                                                                                         }
                                                                                             else
                                                                                             {
@@ -431,6 +435,7 @@ int main ()
                                                                                                     {
                                                                                                         printf("Pese a tus intentos, has fallado el codigo, y por triste que parezca, tendras que quedarte en este hotel hasta el fin de tus tiempos.\n");
                                                                                                         printf("FIN DEL JUEGO");
+                                                                                                        return 0;
                                                                                                     }
                                                                                                         else
                                                                                                         {
