@@ -33,10 +33,12 @@ int main ()
                 FicheroUsuarios(info, &numeroUsuarios);
                 IniciarSesion(&numeroUsuarios, info);
 
+
  	    }
  	    else if (sesion==2){
                 FicheroUsuarios(info, &numeroUsuarios);
                 CrearUsuarios(&numeroUsuarios, info);
+
  	    }
  	    else {
             return menu;
@@ -479,36 +481,37 @@ int main ()
 
                     float solucion1=1000,solucion2=17,solucion3=3748,solucion4=20 ,solucion5=8 ,solucion6='d' ,solucion7=50;
                     int cont=0;
-                        printf("Estas en el momento mas complicado de esta historia,espero que estes preparado...\n");
+                        printf("Estas en el momento m%cs complicado de esta historia,espero que estes preparado...\n",160);
                         scanf("%c",&y);
-                        printf("Se trata de la ultima planta de este horrible hotel del que estas deseando escapar.\n");
+                        printf("Se trata de la %cltima planta de este horrible hotel del que estas deseando escapar.\n",163);
                         printf("Antes de entrar a las habitaciones y encontrar la salida,debes resolver esta prueba para comprobar si estas al nivel\n");
                         scanf("%c",&y);
-                        printf("Aqui tienes una baraja de 52 cartas, dividas en dos mazos de 26 cartas cada uno.Si comprobaras las cartas que contiene  cada mazo 1000 veces");
-                        printf("¿cuántas veces crees que coincidiría el número de cartas rojas de un mazo con el número de cartas   negras del otro mazo?\n");
+                        printf("Aqu%c tienes una baraja de 52 cartas, divida en dos mazos de 26 cartas cada uno.Si comprobar%cs las cartas que contiene  cada mazo 1000 veces\n",161,160);
+                        printf("¿cu%cntas veces crees que coincidir%ca el n%cmero de cartas rojas de un mazo con el n%cmero de cartas   negras del otro mazo?\n",160,161,163,163);
 
                         cont=preguntamatematicas(solucion1);
 
                         printf("Vidas perdidas %i\n",cont);
 
                             if(cont==3)
-                            {
-                                printf("Lamento decirte que no has logrado superar ni si quiera esta sencilla prueba,por lo que a continuacion seras arrojado al vacio junto con los demas jugadores que lo han intentado");
+                            {   printf("Explicaci%n:En una baraja de 52 cartas, hay 26 de cada color. Si formas mazos al azar con esa baraja, el n%mero de cartas rojas del mazo A es igual a 26 cartas menos el n%mero de cartas negras del mazo A. En el mazo B se da la situaci%cn inversa.\
+                                       No importa c%mo se reparta la baraja, habr%c tantas cartas rojas en el mazo A como cartas negras haya en el mazo B, y viceversa",162,163,163,162,162,160);
+                                printf("Lamento decirte que no has logrado superar ni si quiera esta sencilla prueba,por lo que a continuaci%cn seras arrojado al vac%co junto con los demas jugadores que lo han intentado",162,161);
                                 printf("FIN DEL JUEGO");
                                 return 0;
                             }
 
                                 else
                                 {
-                                    printf("mmm...observo que eres un jugador astuto espero que estes preparado para entrar a la primera habitacion\n");
+                                    printf("mmm...observo que eres un jugador astuto espero que estes preparado para entrar a la primera habitaci%cn\n",162);
                                     scanf("%c",&y);
                                 }
                                     printf("(Se abre la primera puerta...)");
                                     scanf("%c",&y);
-                                    printf("Hay un chico que está sentado en una esquina tirando un dado. Cada vez que recoge el dado, lo mira y murmura algo.\n");
-                                    printf("Decides acercarte para escuchar lo que dice y parece repetir lo siguinte una y otra vez...:\n");
+                                    printf("Hay un chico que est%c sentado en una esquina tirando un dado. Cada vez que recoge el dado, lo mira y murmura algo.\n",160);
+                                    printf("Decides acercarte para escuchar lo que dice y parece repetir lo siguiente una y otra vez...:\n");
                                     printf("Cada vez que sale un 1, dice: 15.Cada vez que sale un 6, dice: 20.Repite esto una y otra vez.\n");
-                                    printf("Hasta que de repente sale un 3 y el chico te observa y espera tu respuesta que responderías");
+                                    printf("Hasta que de repente sale un 3 y el chico te observa y espera tu respuesta que responder%cas",161);
 
                                     cont=preguntamatematicas(solucion2);
                                     printf("Vidas perdidas %i\n",cont);
@@ -516,64 +519,67 @@ int main ()
                                         if(cont==3)
                                         {
                                             printf("Lamento decirte que no has logrado superar la prueba del chico,por lo que este decide devorarte");
+                                            printf("Explicaci%cn:El chico está contando los puntos visibles del dado. La %cnica cara que no ve es la que est% hacia abajo.\
+                                             Las caras superior e inferior de un dado siempre suman siete, por lo que es f%ccil calcular el total de las cinco caras visibles al tirar un dado.",162,163,160,160);
                                             printf("FIN DEL JUEGO");
                                             return 0;
                                         }
                                             else
                                             {
-                                                printf("El chico misteriso cambia su cara.Al parecer llevaba 50 años atrapado intentado resolver el acertijo.Este decide enseñarte cual es el siguiente paso para huir. \n");
+                                                printf("El chico misteriso cambia su cara.Al parecer llevaba 50 a%cos atrapado intentado resolver el acertijo.Este decide ense%carte cual es el siguiente paso para huir. \n",164,164);
                                                 scanf("%c",&y);
                                             }
-                                                printf("Segun el chico has comenzado con buen pie pero dice que no te confies que esta planta es realmente peligrosa...Te entrega un papel.\n");
+                                                printf("Seg%cn el chico has comenzado con buen pie ,pero dice que no te confies que esta planta es realmente peligrosa...Te entrega un papel.\n",163);
                                                 scanf("%c",&y);
-                                                printf("Estas delante de la puerta a la que el chico te habia mandado , pero no puedes entrar esta bloqueada necesita que introduzcas un codigo\n");
-                                                printf("observando la puerta ves una serie de marcas '(X-X/X)*X=10' CLAVE:XXXX, el chico te dio un papel con una serie de numeros: 3,4,7,8.(Debes introducir los numeros ordenados para que cumplan la ecucacion ");
+                                                printf("Est%cs delante de la puerta a la que el chico te hab%ca mandado , pero no puedes entrar esta bloqueada necesita que introduzcas un c%cdigo\n",160,161,162);
+                                                printf("observando la puerta ves una serie de marcas '(x-x/x)*x=10' CLAVE:xxxx, el chico te di%c un papel con una serie de n%cmeros: 3,4,7,8.(Debes introducir los n%cmeros ordenados para que cumplan la ecuaci%cn ",162,163,163,162);
 
                                                 cont=preguntamatematicas(solucion3);
                                                 printf("Vidas perdidas %i\n",cont);
 
-                                                    if(cont==3)
+                                                if(cont==3)
                                                     {
-                                                        printf("Lamento decirte que no has logrado abrir esta puerta,por lo que seras arrojado al vacio junto con los demas jugadores que lo han intentado ");
+                                                        printf("Lamento decirte que no has logrado abrir esta puerta,por lo que seras arrojado al vac%co junto con los dem%cs jugadores que lo han intentado ",161,160);
+                                                        printf("Explicaci%cn:Para resolver este problema hay que pensar en fracciones. Si no te percatas desde el principio, encontrar la solución puede ser muy dif%ccil.",162,161);
                                                         printf("FIN DEL JUEGO");
                                                         return 0;
                                                     }
                                                         else
                                                         {
-                                                            printf("Enhorabuena, has conseguido acceder a la siguiente sala, ya te queda menos para poder escapar de este terrible hotel");
+                                                            printf("Enhorabuena, has conseguido acceder a la siguiente sala, ya te queda menos para poder escapar de este terrible hotel\n");
                                                             scanf("%c", &y);
                                                         }
-                                                            printf("Una vez dentro, te fijas en la poca iluminacion que hay y empiezas a buscar un interruptor para poder encender la lámpara de araña que hay colgada del techo\n");
+                                                            printf("Una vez dentro, te fijas en la poca iluminaci%cn que hay y empiezas a buscar un interruptor para poder encender la l%cmpara de ara%ca que hay colgada del techo\n",162,160,164);
                                                             scanf("%c",&y);
-                                                            printf("Minetras caminas, tropiezas con unos objetos que no puedes ver, pero son bastante pesados\n");
-                                                            printf("Tras reincorporarte de la caida con ayuda de la pared, sientes una pequeña caja, con un boton\n");
+                                                            printf("Mientras caminas, tropiezas con unos objetos que no puedes ver, pero son bastante pesados\n");
+                                                            printf("Tras reincorporarte de la ca%cda con ayuda de la pared, sientes una peque%ca caja, con un bot%cn\n",161,164,162);
                                                             scanf("%c",&y);
                                                             printf("Tras unos pocos instantes, te das cuenta que has conseguido encontrar el interruptor que necesitabas para encender la luz, pero... hay un problema\n ");
-                                                            printf("La luz no se enciende, por lo que decides abrir la caja para saber qué está ocurriendo\n");
+                                                            printf("La luz no se enciende, por lo que decides abrir la caja para saber qu%c est%c ocurriendo\n",130,160);
                                                             printf("Lo abres y ves que hay unos cables enrrollados y junto a ellos, ves una nota...\n");
                                                             printf("si la luz deseas encender, el acertijo deberas resolver.\n");
-                                                            printf("Has colocado las 52 cartas de una baraja mas un comodin boca abajo en una mesa. Luego empiezas a darles la vuelta una a una. Si no puedes dar la vuelta a la misma carta dos veces ¿Que probabilidades tienes de dar la vuelta a los cuatro ases antes de encontrar el comodin? (introduce la solucion en porcentaje)\n");
+                                                            printf("Has colocado las 52 cartas de una baraja mas un comod%cn boca abajo en una mesa. Luego empiezas a darles la vuelta una a una. Si no puedes dar la vuelta a la misma carta dos veces ¿Que probabilidades tienes de dar la vuelta a los cuatro ases antes de encontrar el comod%cn? (introduce la soluci%cn en porcentaje)\n",161,161,162);
 
                                                             cont=preguntamatematicas(solucion4);
                                                             printf("Vidas perdidas %i\n",cont);
 
                                                                 if(cont==3)
                                                                 {
-                                                                    printf("No has conseguido encender la luz, por lo que los fantasmas del hotel no se han sentido amenazados y te han atacado.\n");
-                                                                    printf("Expliacion: Tienes cinco cartas (los ases y el comodín) a las que dar la vuelta y una de ellas tiene que ser la última. Así que la solución es una entre cinco, o lo que es lo mismo: el 20 por ciento.\n");
+                                                                    printf("No has conseguido encender la luz, por lo que los fantasmas del hotel se han sentido amenazados y te han atacado.\n");
+                                                                    printf("Explicaci%n: Tienes cinco cartas (los ases y el comod%cn) a las que dar la vuelta y una de ellas tiene que ser la %cltima. As% que la soluci%cn es una entre cinco, o lo que es lo mismo: el 20 por ciento.\n",162,161,163,161,162);
                                                                     printf("FIN DEL JUEGO\n");
                                                                     return 0;
                                                                 }
                                                                     else
                                                                     {
                                                                         printf("CORRECTO! MUY BIEN AVENTURERO!\n");
-                                                                        printf("Por fin se hace la luz y consigues ver claramente la habitación.");
+                                                                        printf("Por fin se hace la luz y consigues ver claramente la habitaci%cn.",162);
                                                                         scanf("%c",&y);
                                                                     }
                                                                         printf("Te fijas con lo que tropezaste antes, ves que es una caja de la que empieza a salir un fantasma.\n");
-                                                                        printf("Empieza a hablarte, comentandote que el medico le ha preescrito unas medicinas, pero no sabe en que orden poner las pastillas y cuantas debe enumerar para no equivocarse.\n");
-                                                                        printf("Muy agobiado te pide ayuda y te dice que si le consigues ayudar, una llave te dara para poder salir del cuarto.\n");
-                                                                        printf("Acertijo: El medico le ha prescrito 10 pastillas a un fantasma, el cual debe tomarse una al dia a partir de hoy, y en un orden especifico ¿A cuantas debe poner numero para no equivocarse?\n");
+                                                                        printf("Empieza a hablarte, comentandote que el medico le ha preescrito unas medicinas, pero no sabe en que orden poner las pastillas y cu%cntas debe enumerar para no equivocarse.\n",160);
+                                                                        printf("Muy agobiado te pide ayuda y te dice que si le consigues ayudar, una llave te dar%c para poder salir del cuarto.\n",160);
+                                                                        printf("Acertijo: El m%cdico le ha prescrito 10 pastillas a un fantasma, el cual debe tomarse una al d%ca a partir de hoy, y en un orden espec%cfico ¿A cu%cntas debe poner n%cmero para no equivocarse?\n",130,161,161,160,163);
 
                                                                         cont=preguntamatematicas(solucion5);
                                                                         printf("Vidas perdidas %i\n",cont);
@@ -581,7 +587,7 @@ int main ()
                                                                             if(cont==3)
                                                                             {
                                                                                 printf("Te has equivocado!! El fantasma se ha enfadado y te ha encerrado en la caja.\n");
-                                                                                printf("Explicacion: Debe tomar la pastilla de hoy, y luego numerar las que le toque tomar desde el dia 2 al 9. La del dia 10 no necesita numerarla porque sera la unica que no estara numerada, asi que no puede confundirse con otra.\n");
+                                                                                printf("Explicaci%cn: Debe tomar la pastilla de hoy, y luego numerar las que le toque tomar desde el d%ca 2 al 9. La del d%ca 10 no necesita numerarla porque sera la %cnica que no estara numerada, as%c que no puede confundirse con otra.\n",162,161,161,163,161);
                                                                                 printf("FIN DEL JUEGO");
                                                                                 return 0;
                                                                             }
@@ -591,13 +597,13 @@ int main ()
                                                                                     scanf("%c",&y);
                                                                                 }
                                                                                     printf("Pasas la puerta y ves unas escaleras con la señal EXIT, no te lo puedes creer, has encontrado la salida.\n");
-                                                                                    printf("Bajas las escaleras lo mas rapido que puedes para que, por fin puedas dejar atras toda la locura.\n");
+                                                                                    printf("Bajas las escaleras lo mas r%cpido que puedes para que, por fin puedas dejar atr%cs toda la locura.\n",160,160);
                                                                                     printf("Pero... esto no se ha acabado\n");
                                                                                     printf("Al llegar a la planta baja, te fijas que hay un grupo de zombies discutiendo sobre un tema de dinero.\n ");
-                                                                                    printf("se te acercan y te dicen que si les ayudas a resolver el problema, te dejarán salir del hotel\n");
-                                                                                    printf("Acertijo: Cada una de estas personas ha pedido dinero prestado a una de las otras cinco, y a su vez ha prestado dinero a otra persona. Si B pidio dinero a A, E no presto a A, y C presto a D ¿Quien fue el que le presto dinero a A?\n");
+                                                                                    printf("se te acercan y te dicen que si les ayudas a resolver el problema, te dejar%cn salir del hotel\n",160);
+                                                                                    printf("Acertijo: Cada una de estas personas ha pedido dinero prestado a una de las otras cinco, y a su vez ha prestado dinero a otra persona. Si B pidi%c dinero a A, E no presto a A, y C presto a D ¿Qui%cn fue el que le presto dinero a A?\n",162,130);
 
-                                                                                    cont=preguntamatematicas(solucion6);
+                                                                                    cont=preguntatest(solucion6);
                                                                                     printf("Vidas perdidas %i\n",cont);
 
                                                                                         if(cont==3)
@@ -608,21 +614,21 @@ int main ()
                                                                                         }
                                                                                             else
                                                                                             {
-                                                                                                printf("Has conseguido ayudarles, estan tan contentos que te ayudan a llegar al coche aparcado en el jardin para que puedas escapar de tal lugar funebre.\n");
+                                                                                                printf("Has conseguido ayudarles, estan tan contentos que te ayudan a llegar al coche aparcado en el jard%cn para que puedas escapar de tal lugar funebre.\n",161);
                                                                                                 scanf("%c",&y);
                                                                                             }
-                                                                                                printf("Llegas al jardin de enfrente cansado, con ganas de volver a casa y saludar a tu familia tras tanto tiempo encerrado y asustado, pero te encuentras con el ultimo inconveniente...");
-                                                                                                printf("No te lo puedes creer, tu coche ya no esta, ya no tienes fuerzas de nada y del disgusto, te pones a llorar.\n");
-                                                                                                printf("Unos granjeros se te acercan y empiezan a habalar contigo, les comentas tu situacion y se ofreces a llevarte a casa si les ayudas a resolver un problema.\n");
-                                                                                                printf("Acertijo: Alfred y Roland deben arar un terreno de 4 hectareas por el que se pagan 100€. Teniendo en cuenta que dividen el terreno por la mitad para trabajar cada uno en un lado, que Alfred trabaja a un ritmo de 20 minutos por hectarea, y que Roland tarda 40 minutos, pero lo hace tres veces mas rapido que Alfred. ¿Cuánto dinero ganara Roland?\n");
+                                                                                                printf("Llegas al jard%cn de enfrente cansado, con ganas de volver a casa y saludar a tu familia tras tanto tiempo encerrado y asustado, pero te encuentras con el %cltimo inconveniente...",161,163);
+                                                                                                printf("No te lo puedes creer, tu coche ya no est%c, ya no tienes fuerzas de nada y del disgusto, te pones a llorar.\n",160);
+                                                                                                printf("Unos granjeros se te acercan y empiezan a hablar contigo, les comentas tu situaci%cn y se ofreces a llevarte a casa si les ayudas a resolver un problema.\n",162);
+                                                                                                printf("Acertijo: Alfred y Roland deben arar un terreno de 4 hect%creas por el que se pagan 100€. Teniendo en cuenta que dividen el terreno por la mitad para trabajar cada uno en un lado, que Alfred trabaja a un ritmo de 20 minutos por hect%crea, y que Roland tarda 40 minutos, pero lo hace tres veces m%cs r%cpido que Alfred. ¿Cu%cnto dinero ganar%c Roland?\n",160,160,160,160,160,160);
 
                                                                                                 cont=preguntamatematicas(solucion7);
                                                                                                 printf("Vidas perdidas %i\n",cont);
 
                                                                                                     if(cont==3)
                                                                                                     {
-                                                                                                        printf("Pese a tus intentos, has fallado y los granjeros se han enfadado y te han dejado tirado, por lo que tinenes que volver al hotel a refugiarte.\n");
-                                                                                                        printf("Explicacion: Al dividir el terreno por la mitad y ocuparse cada uno de una parte, ambos cobraran la mitad de los 100€ que cuesta hacer el trabajo, independientemente de lo que tarden en hacer su parte.\n");
+                                                                                                        printf("Pese a tus intentos, has fallado y los granjeros se han enfadado y te han dejado tirado, por lo que tienes que volver al hotel a refugiarte lo que supone tu muerte.\n");
+                                                                                                        printf("Explicaci%cn: Al dividir el terreno por la mitad y ocuparse cada uno de una parte, ambos cobrar%cn la mitad de los 100%c que cuesta hacer el trabajo, independientemente de lo que tarden en hacer su parte.\n",162,160,36);
                                                                                                         printf("FIN DEL JUEGO");
                                                                                                         return 0;
                                                                                                     }
@@ -700,13 +706,16 @@ void IniciarSesion(int *nUsuarios,struct usuario info[]){
 
 		if(coincide==0){
 			printf("Usuario o clave incorrectos.\n");
+            printf("Enter para volverlo a intentar");
 		}else{
 			printf("Usuario valido\n");
+			printf("Enter para continuar");
 		}
 			fflush(stdin); //PAUSA
             getchar();
 
 	}while(coincide==0);//Bucle hasta que exista un usuario que coincida
+
 
 }
 
@@ -732,11 +741,13 @@ void CrearUsuarios(int *nUsuarios,struct usuario info[]){
 
 		if(coincide==1){
 			printf("Ya existe ese usuario.Prueba de nuevo\n");
+
 			fflush(stdin); //PAUSA
             getchar();
 		}else{
 			printf("Usuario valido\n");
 			strcpy(info[*nUsuarios].nombre,usuarioNuevo);
+
 		}
 
 	}while(coincide==1);
@@ -751,6 +762,7 @@ void CrearUsuarios(int *nUsuarios,struct usuario info[]){
     fprintf(fichUsuarios,"%s\n%s\n",info[i].nombre, info[i].contrasena);
 
 	fclose(fichUsuarios);
+	printf("Enter para continuar");
 	fflush(stdin); //PAUSA
     getchar();
 }
