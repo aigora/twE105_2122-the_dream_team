@@ -288,17 +288,17 @@ int main ()
                 break;
             case 3:
                 printf("Ha elegido la dificultad dificil\n");
-                    char x;
+                    char y;
 
                 printf("Ha elegido la dificultad dificil");
 
                     float solucion1=1000,solucion2=17,solucion3=3748,solucion4='c' ,solucion5='d' ,solucion6='d' ,solucion7=0154 ;
                     int cont=0;
                         printf("Estas en el momento mas complicado de esta historia,espero que estes preparado...\n");
-                        scanf("%c",&x);
+                        scanf("%c",&y);
                         printf("Se trata de la ultima planta de este horrible hotel del que estas deseando escapar.\n");
                         printf("Antes de entrar a las habitaciones y encontrar la salida,debes resolver esta prueba para comprobar si estas al nivel\n");
-                        scanf("%c",&x);
+                        scanf("%c",&y);
                         printf("Aqui tienes una baraja de 52 cartas, dividas en dos mazos de 26 cartas cada uno.Si comprobaras las cartas que contiene  cada mazo 1000 veces");
                         printf("¿cuántas veces crees que coincidiría el número de cartas rojas de un mazo con el número de cartas   negras del otro mazo?\n");
 
@@ -315,10 +315,10 @@ int main ()
                                 else
                                 {
                                     printf("mmm...observo que eres un jugador astuto espero que estes preparado para entrar a la primera habitacion\n");
-                                    scanf("%c",&x);
+                                    scanf("%c",&y);
                                 }
                                     printf("(Se abre la primera puerta...)");
-                                    scanf("%c",&x);
+                                    scanf("%c",&y);
                                     printf("Hay un chico que está sentado en una esquina tirando un dado. Cada vez que recoge el dado, lo mira y murmura algo.\n");
                                     printf("Decides acercarte para escuchar lo que dice y parece repetir lo siguinte una y otra vez...:\n");
                                     printf("Cada vez que sale un 1, dice: 15.Cada vez que sale un 6, dice: 20.Repite esto una y otra vez.\n");
@@ -335,10 +335,10 @@ int main ()
                                             else
                                             {
                                                 printf("El chico misteriso cambia su cara.Al parecer llevaba 50 años atrapado intentado resolver el acertijo.Este decide enseñarte cual es el siguiente paso para huir. \n");
-                                                scanf("%c",&x);
+                                                scanf("%c",&y);
                                             }
                                                 printf("Segun el chico has comenzado con buen pie pero dice que no te confies que esta planta es realmente peligrosa...Te entrega un papel.\n");
-                                                scanf("%c",&x);
+                                                scanf("%c",&y);
                                                 printf("Estas delante de la puerta a la que el chico te habia mandado , pero no puedes entrar esta bloqueada necesita que introduzcas un codigo\n");
                                                 printf("observando la puerta ves una serie de marcas '(X-X/X)*X=10' CLAVE:XXXX, el chico te dio un papel con una serie de numeros: 3,4,7,8.(Debes introducir los numeros ordenados para que cumplan la ecucacion ");
 
@@ -353,13 +353,13 @@ int main ()
                                                         else
                                                         {
                                                             printf("Enhorabuena, has conseguido acceder a la siguiente sala, ya te queda menos para poder escapar de este terrible hotel");
-                                                            scanf("%c", &x);
+                                                            scanf("%c", &y);
                                                         }
                                                             printf("Una vez dentro, te fijas en la poca iluminacion que hay y empiezas a buscar un interruptor para poder encender la lámpara de araña que hay colgada del techo\n");
-                                                            scanf("%c",&x);
+                                                            scanf("%c",&y);
                                                             printf("Minetras caminas, tropiezas con unos objetos que no puedes ver, pero son bastante pesados\n");
                                                             printf("Tras reincorporarte de la caida con ayuda de la pared, sientes una pequeña caja, con un boton\n");
-                                                            scanf("%c",&x);
+                                                            scanf("%c",&y);
                                                             printf("Tras unos pocos instantes, te das cuenta que has conseguido encontrar el interruptor que necesitabas para encender la luz, pero... hay un problema\n ");
                                                             printf("La luz no se enciende, por lo que decides abrir la caja para saber qué está ocurriendo\n");
                                                             printf("Lo abres y ves que hay unos cables enrrollados y junto a ellos, ves una nota...\n");
@@ -377,7 +377,7 @@ int main ()
                                                                     else
                                                                     {
                                                                         printf("Por fin se hace la luz y consigues ver claramente la habitación.\n");
-                                                                        scanf("%c",&x);
+                                                                        scanf("%c",&y);
                                                                     }
                                                                         printf("Te fijas con lo que tropezaste antes, ves que son unas cajas cuadradas con dibujos en todas sus caras");
                                                                         printf("Te empiezas a acercar para observarlas mejor, pero empieza a sonar una cinta y te asustas.\n");
@@ -396,13 +396,13 @@ int main ()
                                                                                 else
                                                                                 {
                                                                                     printf("Consigues acertar la caja distinta y obtener la llave con la que abres la puerta.\n");
-                                                                                    scanf("%c",&x);
+                                                                                    scanf("%c",&y);
                                                                                 }
                                                                                     printf("Pasas la puerta y ves unas escaleras con la señal EXIT, no te lo puedes creer, has encontrado la salida.\n");
-                                                                                    scanf("%c",&x);
+                                                                                    scanf("%c",&y);
                                                                                     printf("Bajas las escaleras lo mas rapido que puedes para que, por fin puedas dejar atras toda la locura...\n");
                                                                                     printf("Pero... esto no se ha acabado\n");
-                                                                                    scanf("%c",&x);
+                                                                                    scanf("%c",&y);
                                                                                     printf("Al llegar a la planta baja, te fijas que hay un grupo de zombies discutiendo sobre un tema de dinero.\n ");
                                                                                     printf("se te acercan y te dicen que si les ayudas a resolver el problema, te dejarán salir del hotel\n");
                                                                                     //066
@@ -418,7 +418,7 @@ int main ()
                                                                                             else
                                                                                             {
                                                                                                 printf("Has conseguido ayudarles, estan tan contentos que te ayudan a llegar al coche aparcado en el jardin para que puedas escapar de tal lugar funebre.\n");
-                                                                                                scanf("%c",&x);
+                                                                                                scanf("%c",&y);
                                                                                             }
                                                                                                 printf("Llegas al coche cansado, con ganas de volver a casa y saludar a tu familia tras tanto tiempo encerrado y asustado, pero te encuentras con el ultimo inconveniente...");
                                                                                                 printf("No te lo puedes creer, hay un codigo en la puerta del coche que tienes que descifrar para poder abrir la puerta y encender el motor.\n");
@@ -437,7 +437,7 @@ int main ()
                                                                                                             printf("ENHORABUENA!! HAS CONSEGUIDO SALIR Y YA ESTAS DE CAMINO A TU CASA, GENIAL TRABAJO, ERES TODO UN PROFESIONAL DE LAS AVENTURAS.\n");
                                                                                                             printf("Esperamos verte de nuevo!!\n");
                                                                                                             //introducir ventana con video de creditos
-                                                                                                            scanf("%c",&x);
+                                                                                                            scanf("%c",&y);
                                                                                                         }
 
                 break;
