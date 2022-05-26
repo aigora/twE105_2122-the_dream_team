@@ -49,9 +49,8 @@ int main ()
         scanf("%d", &dificultad);
         switch (dificultad)
             {
-            case 1:
-                printf("Ha elegido la dificultad facil\n");
-                break;
+              printf("Ha elegido la dificultad facil\n");
+              
                 printf("Ha elegido la dificultad facil");
                      printf("Ha elegido la dificultad facil\n");
               char x;
@@ -59,8 +58,8 @@ int main ()
               char decision2;
               int vidas=0;
               char solucion1f= 'A';
-              char solucion2f= 'A';
-              float solucion3f= '06:05';
+              float solucion2f= '2368';
+              char solucion3f= 'C';
               float solucion4f= '6';
               float solucion5f= 'D';
 
@@ -69,7 +68,7 @@ int main ()
 
     printf("Ya son las 12 de una noche de lluvia, avanzas con tu coche por una carretera que parece no tener fin\n");
         scanf("%c",&x);
-    printf("comienza a haber tormenta, deberías buscar un techo donde pasar la noche\n");
+    printf("comienza a haber tormenta, deberias buscar un techo donde pasar la noche\n");
         scanf("%c",&x);
     printf("Ves la entrada a un hotel a un lado de la carretera\n");
 
@@ -85,7 +84,7 @@ int main ()
 					printf("La tormenta empeora, deberías encontrar cobijo para la noche, estas agotado y conducir en estas condiciones es peligroso\n");
 				}
         else{
-                printf("Introduzca una opción válida(A o B)\n");
+                printf("Introduzca una opcion valida(A o B)\n");
 				}
     }while(decision1!='A' && decision1!='B');
     }while(decision1!='A');
@@ -106,6 +105,8 @@ int main ()
                 scanf("%c",&x);
         printf("Aprecias que discuten sobre quien es el mejor peluquero de los dos\n");
                 scanf("%c",&x);
+        printf("Parecen gemelos, el gemelo A tiene un pelo con trasquilones y calvas, en cambio el B lo tiene arreglado e igualado\n");
+                scanf("%c",&x);
         printf("Uno de los extraños dice: 'eh tu, juzga nuestros peinados y decide quien es el mejor'\n");
         //imagen peluqueros, acertijo 51
         printf("A) Extraño A\nB) Extraño B\n");
@@ -116,7 +117,7 @@ int main ()
         printf("FIN DEL JUEGO");
     }
     else{
-        printf("El extraño A te respode:'hahaha, sabía que eras listo'\n");
+        printf("El extraño A te respode:'hahaha, sabia que eras listo'\n");
         scanf("%c",&x);
     }
 
@@ -133,23 +134,23 @@ int main ()
                 scanf("%c",&x);
         printf("Cansado de no poder dormir, te decides a pedirles silencio\n");
                 scanf("%c",&x);
-        printf("Abres la puerta, te quedas en shock al ver que su puerta ya no daba al pasillo por el que habías llegado\n");
+        printf("Abres la puerta, te quedas en shock al ver que su puerta ya no daba al pasillo por el que habias llegado\n");
                 scanf("%c",&x);
-        printf("La puerta se cierra tras de tí\n");
+        printf("La puerta se cierra tras de ti\n");
                 scanf("%c",&x);
-        printf("Contemplas la sala, esta oscura. La única luz la proporciona una bombilla que iluminan\n tenuemente cuatro sombreros de copa dispuestos en una mesa\n");
+        printf("Contemplas la sala, esta oscura. La única luz la proporciona una bombilla que ilumina\n tenuemente una pizarra en el lateral del habitáculo\n");
                 scanf("%c",&x);
         printf("Consigues distinguir una figura al fondo de la sala\n");
                 scanf("%c",&x);
         printf("Se te ponen los pelos de punta, ya es suficiente, quieres abandonar el hotel\n");
                 scanf("%c",&x);
-        printf("Antes de que puedas decir nada, la misteriosa figura te dice 'Estas cuatro chisteras tienen\n la misma altura. Pero la longitud de sus alas es diferente. Es decir: las chisteras son igual de altas, pero cada una tiene un ancho distinto.'\n");
+        printf("Antes de que puedas decir nada, la misteriosa figura te dice 'Este problema no se ha podido resolver en 120 años\n si lo resuelves demostraras que eres digno y te dejare ir'\n");
                 scanf("%c",&x);
-        printf("Una de las cuatro chisteras tiene un ala y una copa de la misma medida. ¿Sabes cuál es?, si respondes correctamente te dejare pasar\n");
+        printf("A + C = D\nA x B = C\nC - B = B\nA x 4 = D\nABCD=¿?\n");
         //foto acertijo 003
-        printf("A) Sombrero A 8\nB)Sombrero B\nC) Sombrero C\nD) Sombrero D\n");
+   
 
-          vidas = preguntatest(solucion2f);
+            vidas=preguntamatematicas(solucion2f);
 
             if(vidas==3){
         printf("El hombre misterioso no te deja abandonar la sala, te quedas encerrado en la oscuridad");
@@ -173,14 +174,14 @@ int main ()
                 scanf("%c",&x);
     printf("Al acercate notas algo extraño en su rostro, no tiene ojos\n");
                 scanf("%c",&x);
-    printf("La anciana pregunta'¿qué hora es?, si aciertas te dejare ir, si no me quedaré con tus ojos'\n");
+    printf("La anciana murmura'Tengo agujas y no sé coser, tengo números y no sé leer.¿qué soy?'\n");
                 scanf("%c",&x);
-    printf("Consigues encontrar un reloj,  dicho reloj de pared se cayó al suelo y todos los números se desprendieron\n");
+    printf("si aciertas te dejare ir, si no me quedaré con tus ojos\n");
                 scanf("%c",&x);
-    // imagen reloj
-    printf("(escriba la hora de la siguiente forma horas:minutos, ejemplo:'12:15')\n");
+   
+    printf("A) Llaves \nB) Kit de costura\nC)Reloj\nD)Cerrojo");
 
-    vidas=preguntamatematicas(solucion3f);
+    vidas=preguntatest(solucion3f);
 
     if(vidas==3){
         printf("La anciana se queda tus ojos\n");
@@ -251,13 +252,13 @@ int main ()
                 scanf("%c",&x);
 					printf("Despues de todo no te sorprende\n");
                 scanf("%c",&x);
-					printf("Te comenta que si le ayudas a hacer su trabajo te entregará las llaves\n");
+					printf("Te comenta que hace años le contaron un acertijo que aun no habia sido capaz de responde, si le ayudas te dara las llaves\n");
                 scanf("%c",&x);
 					printf("Aceptas\n");
                 scanf("%c",&x);
-					printf("'¿Qué dos árboles están más separados entre sí?'\n");
+					printf("'¿Aunque planta verde y débil, nadie sin temor se arrima, que es mi roce como el fuego, que al punto el cuerpo lastima.?'\n");
                 scanf("%c",&x);
-					printf("A) B y \nB)C y E \nC) B y E \nD) A y E  \n");
+					printf("A) Almendro  \nB)Diente de leon\nC) Pino \nD) Hortiga  \n");
 
 					vidas = preguntatest(solucion5f);
 
@@ -280,6 +281,7 @@ int main ()
         printf("comienza a haber tormenta, deberías buscar un techo donde pasar la noche\n");
         scanf("%c",&x);
         printf("FIN DEL JUEGO");
+
 
 
 
