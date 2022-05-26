@@ -48,13 +48,13 @@ int main ()
         switch (dificultad)
             {
             case 1:
-                printf("Ha elegido la dificultad facil");
+                printf("Ha elegido la dificultad facil\n");
                 break;
             case 2:
-                printf("Ha elegido la dificultad media");
+                printf("Ha elegido la dificultad media\n");
                 break;
             case 3:
-                printf("Ha elegido la dificultad dificil");
+                printf("Ha elegido la dificultad dificil\n");
                     char x;
                     float solucion1=1000,solucion2=17,solucion3=3748,solucion4='c' ,solucion5='d' ,solucion6='d' ,solucion7=0154 ;
                     int cont=0;
@@ -116,7 +116,7 @@ int main ()
                                                     }
                                                         else
                                                         {
-                                                            printf("Enhorabuena, has conseguido acceder a la siguiente sala, ya te queda menos para poder escapar de este terrible hotel")
+                                                            printf("Enhorabuena, has conseguido acceder a la siguiente sala, ya te queda menos para poder escapar de este terrible hotel");
                                                             scanf("%c", &x);
                                                         }
                                                             printf("Una vez dentro, te fijas en la poca iluminacion que hay y empiezas a buscar un interruptor para poder encender la lámpara de araña que hay colgada del techo\n");
@@ -273,7 +273,8 @@ void IniciarSesion(int *nUsuarios,struct usuario info[]){
 		}else{
 			printf("Usuario valido\n");
 		}
-			system("PAUSE");
+			fflush(stdin); //PAUSA
+            getchar();
 
 	}while(coincide==0);//Bucle hasta que exista un usuario que coincida
 
@@ -301,7 +302,8 @@ void CrearUsuarios(int *nUsuarios,struct usuario info[]){
 
 		if(coincide==1){
 			printf("Ya existe ese usuario.Prueba de nuevo\n");
-			system("PAUSE");
+			fflush(stdin); //PAUSA
+            getchar();
 		}else{
 			printf("Usuario valido\n");
 			strcpy(info[*nUsuarios].nombre,usuarioNuevo);
@@ -319,7 +321,8 @@ void CrearUsuarios(int *nUsuarios,struct usuario info[]){
     fprintf(fichUsuarios,"%s\n%s\n",info[i].nombre, info[i].contrasena);
 
 	fclose(fichUsuarios);
-	system("PAUSE");
+	fflush(stdin); //PAUSA
+    getchar();
 }
 int preguntatest(char solucion){
     int contador;
