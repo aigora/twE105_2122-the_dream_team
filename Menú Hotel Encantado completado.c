@@ -51,8 +51,7 @@ int main ()
             {
               printf("Ha elegido la dificultad facil\n");
               
-                printf("Ha elegido la dificultad facil");
-                     printf("Ha elegido la dificultad facil\n");
+               
               char x;
               char decision1;
               char decision2;
