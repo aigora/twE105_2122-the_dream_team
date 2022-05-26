@@ -1,23 +1,23 @@
-						✟ INSTRUCCIONES HOTEL ENCANTADO ✟
+					      ✟ INSTRUCCIONES HOTEL ENCANTADO ✟
 
-							Bienvenido aventurero! 
+						   Bienvenido aventurero! 
 				 
 
 				 EL HOTEL ENCANTADO es una experiencia interactiva con toma de 
-                          decisiones y problemas a los que te tendrás que enfrentar.
+                                   decisiones y problemas a los que te tendrás que enfrentar.
  
-			Para comenzar a jugar será necesario que inicies sesión con tu usuario,
-					   en caso de no tener cuenta podras crearla.
+			     Para comenzar a jugar será necesario que inicies sesión con tu usuario,
+					     en caso de no tener cuenta podras crearla.
 
-             El juego dispone de tres dificultades: fácil, media y dificil. Cuanto mayor sea la 
-                               dificultad, más complicados seran los acertijos.
+                        El juego dispone de tres dificultades: fácil, media y dificil. Cuanto mayor sea la 
+                                          dificultad, más complicados seran los acertijos.
 
-                   Cuentas con tres vidas❤, si el contador llega a 0 finaliza el juego.
+                               Cuentas con tres vidas❤, si el contador llega a 0 finaliza el juego.
 
-                               Recuerda escribir las opciones en MAYÚSCULAS.
+                                          Recuerda escribir las opciones en MAYÚSCULAS.
 
-                                       [ENTER]- continuar diálogos
-
+                                                   [ENTER]- continuar diálogos
+ 
 
 
 
