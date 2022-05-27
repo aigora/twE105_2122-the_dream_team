@@ -573,7 +573,6 @@ int main ()
                                                                 }
                                                                     else
                                                                     {
-                                                                        printf("CORRECTO! MUY BIEN AVENTURERO!\n");
                                                                         printf("Por fin se hace la luz y consigues ver claramente la habitaci%cn.",162);
                                                                         scanf("%c",&y);
                                                                     }
