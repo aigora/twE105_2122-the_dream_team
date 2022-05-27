@@ -50,8 +50,8 @@ int main ()
         switch (dificultad)
             {
               printf("Ha elegido la dificultad facil\n");
-              
-               
+
+
               char x;
               char decision1;
               char decision2;
@@ -147,7 +147,7 @@ int main ()
                 scanf("%c",&x);
         printf("A + C = D\nA x B = C\nC - B = B\nA x 4 = D\nABCD=¿?\n");
         //foto acertijo 003
-   
+
 
             vidas=preguntamatematicas(solucion2f);
 
@@ -177,7 +177,7 @@ int main ()
                 scanf("%c",&x);
     printf("si aciertas te dejare ir, si no me quedaré con tus ojos\n");
                 scanf("%c",&x);
-   
+
     printf("A) Llaves \nB) Kit de costura\nC)Reloj\nD)Cerrojo");
 
     vidas=preguntatest(solucion3f);
@@ -651,6 +651,8 @@ int main ()
 
  	case 2:
 	    printf("Estas son las intrucciones:\n\n");
+	    FILE *f;
+	    f = fopen("instrucciones.txt","r");
 	    //Aqui se adjuntaran las instrucciones
 	    return main();
 	    break;
@@ -698,7 +700,7 @@ void IniciarSesion(int *nUsuarios,struct usuario info[]){
 		fflush(stdin);
 		scanf("%s",Contrasena1);
 
-		//Tenemos que ver que efectivamente existe ese usuario y contraseña.
+		//Tenemos que ver que existe ese usuario y contraseña.
 		for(i=0;i<*nUsuarios;i++){
 			if(strcmp(Usuario1,info[i].nombre)==0 && strcmp(Contrasena1,info[i].contrasena)==0){
 				coincide++;
@@ -707,10 +709,10 @@ void IniciarSesion(int *nUsuarios,struct usuario info[]){
 
 		if(coincide==0){
 			printf("Usuario o clave incorrectos.\n");
-            printf("Enter para volverlo a intentar");
+            printf("Intro para volverlo a intentar");
 		}else{
 			printf("Usuario valido\n");
-			printf("Enter para continuar");
+			printf("Intro para continuar");
 		}
 			fflush(stdin); //PAUSA
             getchar();
